@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>FAQ</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"/></script>
+</head>
+<body>
+<header class="centered-navigation" role="banner">
+  <div class="centered-navigation-wrapper">
+    <a href="index.html" class="mobile-logo">
+      <img src="img/logo.svg" alt="Logo image">
+    </a>
+    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="faq.html">FAQ</a></li>
+        <li class="nav-link"><a href="contact.html">Contact</a></li>
+        <li class="nav-link"><a href="starter-kit.html">Get Involved</a></li>
+        <li class="nav-link logo">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo image">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<h1 class="header">Frequently Asked Questions</h1>
+<div class="scroll-on-page">
+  <aside id="scroll-on-page-top">
+    <a class="scroll-on-page-link" href="#scroll-link-1">Why is diversity in tech important?</a>
+    <a class="scroll-on-page-link" href="#scroll-link-2">What should I do if I’m discriminated in the workplace?</a>
+    <a class="scroll-on-page-link" href="#scroll-link-3">How can I get involved?</a>
+    <a class="scroll-on-page-link" href="#scroll-link-4">Where can I find resources related to diversity in tech?</a>
+    <a class="scroll-on-page-link" href="#scroll-link-3">Who is affected by the lack of diversity in tech?</a>
+    <a class="scroll-on-page-link" href="#scroll-link-3">What are some possible solutions?</a>
+  </aside>
+
+  <article>
+    <section>
+      <h4 id="scroll-link-1">Why is diversity in tech important?</h4>
+      <p>Diversity in the technology industry is important because is the gateway thru which innovative ideas 
+
+from diverse sources and cultures can help create solutions for the consumers for whom the tech products 
+
+are made.</p>
+    </section>
+    <section>
+      <h4 id="scroll-link-2">What should I do if I’m discriminated in the workplace?</h4>
+      <p>There are a couple of advisable steps you could take in order to deal with discrimination in the
+
+      workplace. First, you should review your company’s employee handbook, which should contain the 
+
+      company’s policy and guidelines on how to report discrimination. Secondly, you should contact your 
+
+      Human Resources (HR) department for assistance on how to file an official claim to report the 
+
+      discrimination. If the issue is not resolved adequately, you should contact your local Equal Employment 
+
+      Opportunity Commission (EEOC.) Lastly, it is vital that you document every instance in which you feel 
+
+      you are being discriminated. This could be any email, text, letters, or verbal incidents in which you 
+
+      experienced discrimination.</p>
+    </section>
+    <section>
+      <h4 id="scroll-link-2">How can I get involved?</h4>
+      <p>You should search for local tech meet ups in your area, or you could start your own local diverse tech
+
+      meet up. The site Diversityintech.org will eventually provide a way for techs wanting to become more 
+
+      involved with other peers in the tech community.</p>
+    </section>
+    <section>
+      <h4 id="scroll-link-2">Where can I find resources related to diversity in tech?</h4>
+      <p>There are a couple of resources listed below. I personally plan on updating this site with resources, but 
+
+until then, feel free to shoot me a message: 
+
+<a href="https://medium.com/tech-diversity-files/diversity-101-the-how-4f9d17567427
+">https://medium.com/tech-diversity-files/diversity-101-the-how-4f9d17567427
+</a>      
+<a href="http://feministhack.com/resources/">http://feministhack.com/resources/</a>       
+<a href="https://blog.engineyard.com/2014/rubber-ducking-mental-health (a resource regarding mental health in tech)">
+        https://blog.engineyard.com/2014/rubber-ducking-mental-health (a resource regarding mental health in tech)</a>
+        
+</p>
+    </section>
+
+    <section>
+      <h4 id="scroll-link-3">What are some possible solutions?</h4>
+      <p>There are many possible solutions too long to list. Generally speaking, solutions definitely depend on the 
+
+    issue for which you are seeking a solution. Studies have shown many benefits to having a diverse 
+
+    workforce. Mainly, financially. Also, when collaborating with peers in regular meet ups, 
+
+    open forums, and thru social media, it helps find practical and timely solutions to the issues being 
+
+    discussed. </p>
+      <a class="scroll-on-page-link" href="#scroll-on-page-top">Back to top</a>
+    </section>
+  </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FAQ FORM -->
+<script>(function (jQuery) {
+  jQuery.mark = {
+    jump: function (options) {
+      var defaults = {
+        selector: 'a.scroll-on-page-link'
+      };
+      if (typeof options == 'string') {
+        defaults.selector = options;
+      }
+
+      options = jQuery.extend(defaults, options);
+      return jQuery(options.selector).click(function (e) {
+        var jumpobj = jQuery(this);
+        var target = jumpobj.attr('href');
+        var thespeed = 1000;
+        var offset = jQuery(target).offset().top;
+        jQuery('html,body').animate({
+          scrollTop: offset
+        }, thespeed, 'swing');
+        e.preventDefault();
+      });
+    }
+  };
+})(jQuery);
+
+
+jQuery(function(){  
+  jQuery.mark.jump();
+});
+
+</script>
+<!--<div class="wrapper-for-content-outside-of-footer">
+   Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+</div>-->
+
+<footer class="footer-2" role="contentinfo">
+  <div class="footer-logo">
+    <img src="img/logo.png" alt="Logo image">
+  </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="starter-kit.html">Get Involved</a></li>
+    </ul>
+
+    <div class="footer-secondary-links">
+      <ul>
+        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+      </ul>
+
+      <ul class="footer-social">
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+          </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+      </ul>
+    </div>
+</footer>
+<script>
+$(document).ready(function() {
+  var menuToggle = $('#js-centered-navigation-mobile-menu').unbind();
+  $('#js-centered-navigation-menu').removeClass("show");
+  
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-centered-navigation-menu').slideToggle(function(){
+      if($('#js-centered-navigation-menu').is(':hidden')) {
+        $('#js-centered-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+</script>
+<script>
+$(document).ready(function() {
+  if ($("#js-parallax-window").length) {
+    parallax();
+  }
+});
+
+$(window).scroll(function(e) {
+  if ($("#js-parallax-window").length) {
+    parallax();
+  }
+});
+
+function parallax(){
+  if( $("#js-parallax-window").length > 0 ) {
+    var plxBackground = $("#js-parallax-background");
+    var plxWindow = $("#js-parallax-window");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+  }
+}
+</script>
+</body>
+</html>

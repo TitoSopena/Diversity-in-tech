@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"/> </script>
+  <script src="js/modernizr.js"></script>
+</head>
+<body>
+<header class="centered-navigation" role="banner">
+  <div class="centered-navigation-wrapper">
+    <a href="index.html" class="mobile-logo">
+      <img src="img/logo.png" alt="Logo image">
+    </a>
+    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="faq.html">FAQ</a></li>
+        <li class="nav-link"><a href="contact.html">Contact</a></li>
+        <li class="nav-link"><a href="starter-kit.html">Get Involved</a></li>
+        <li class="nav-link logo">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo image">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<ul class="bullets">
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-1">
+      <img src="img/question.svg
+      " alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Questions</h2>
+      <p> Do you have questions about diversity in tech? Do you have questions about the site?</p>
+          
+      </div>
+  </li>  
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-2">
+      <img src="img/wrench.svg
+      " alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Improvements</h2>
+      <p>Are you having issues with the site? Do you have ideas for 
+        improvements?</p>
+    </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-3">
+      <img src="img/email.png
+      " alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Let's chat</h2>
+      <p>Do you have general feedback, or want to connect in someway? Feel free to drop me a line below, and let’s chat over internet coffee.</p>
+    </div>
+  </li> 
+</ul>
+
+
+
+
+<form class="cd-form floating-labels">
+    <fieldset>
+      <legend>Contact Form</legend>
+
+     <!--  <div class="error-message">
+        <p>Please enter a valid email address</p>
+      </div> -->
+
+      <div class="icon">
+        <label class="cd-label" for="cd-name">Name</label>
+        <input class="user" type="text" name="cd-name" id="cd-name" required>
+        </div> 
+
+        <div class="icon">
+          <label class="cd-label" for="cd-company">Subject</label>
+        <input class="company" type="text" name="cd-company" id="cd-company">
+        </div> 
+
+        <div class="icon">
+          <label class="cd-label" for="cd-email">Email</label>
+        <input class="email error" type="email" name="cd-email" id="cd-email" required>
+        </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="icon">
+        <label class="cd-label" for="cd-textarea">Message</label>
+            <textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+      </div>
+
+      <div>
+            <input type="submit" value="Send Message">
+        </div>
+    </fieldset>
+  </form>
+
+
+
+
+
+
+
+<!--<div class="wrapper-for-content-outside-of-footer">
+   Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+</div>-->
+
+<footer class="footer-2" role="contentinfo">
+  <div class="footer-logo">
+    <img src="img/logo.png" alt="Logo image">
+  </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="starter-kit.html">Get Involved</a></li>
+    </ul>
+
+    <div class="footer-secondary-links">
+      <ul>
+        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+      </ul>
+
+      <ul class="footer-social">
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+          </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+      </ul>
+    </div>
+</footer>
+<script>
+$(document).ready(function() {
+  var menuToggle = $('#js-centered-navigation-mobile-menu').unbind();
+  $('#js-centered-navigation-menu').removeClass("show");
+  
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-centered-navigation-menu').slideToggle(function(){
+      if($('#js-centered-navigation-menu').is(':hidden')) {
+        $('#js-centered-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+</script>
+<script>
+$(document).ready(function() {
+  if ($("#js-parallax-window").length) {
+    parallax();
+  }
+});
+
+$(window).scroll(function(e) {
+  if ($("#js-parallax-window").length) {
+    parallax();
+  }
+});
+
+function parallax(){
+  if( $("#js-parallax-window").length > 0 ) {
+    var plxBackground = $("#js-parallax-background");
+    var plxWindow = $("#js-parallax-window");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+  }
+}
+</script>
+
+</body>
+</html>

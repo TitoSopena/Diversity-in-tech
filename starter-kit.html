@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Get Involved</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"/> </script>
+</head>
+<body>
+<header class="centered-navigation" role="banner">
+  <div class="centered-navigation-wrapper">
+    <a href="index.html" class="mobile-logo">
+      <img src="img/logo.png" alt="Logo image">
+    </a>
+    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="faq.html">FAQ</a></li>
+        <li class="nav-link"><a href="contact.html">Contact</a></li>
+        <li class="nav-link"><a href="starter-kit.html">Get Involved</a></li>
+        <li class="nav-link logo">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo image">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<article class="type-system-geometric">
+  <h1>Get Involved</h1>
+  <h2>"They always say time changes things, but you actually have to change them yourself."
+  </h2>
+  <hr>
+  <h2>Andy Warhol</h2>
+
+
+  <p>In the beginning  of August 2015, the White House became a technology hub with a goal of increasing diversity and inclusion across the tech industry. President Obama hosted over 30 technology companies as part of the White House’s first Demo Day to showcase female and minority drive start-ups. President Obama Also announced an initiative aimed at spurring women and  minority entrepreneurship. As part of the demo day, those same technology companies taken a Diversity Pledge to keep 
+  </p>
+
+  <div class="row"><img src="img/logo.png" class="logo-main2" alt="Logo image">
+  <h3>A Pledge for Diversity in Austin Tech</h3>
+  
+  <p class="intro">Austin has a growing tech community with an emphasis in start-ups. Businesses that agree to take part in the Diversity Pledge, are pledging for clutivating cultures of inclusion and increase diversity in their organizations.</p>
+  <br>
+  <p>Creating a community around this issue will assist in keeping it in the forefront. Eventually Diversity In Tech will be able to stay current on Austin based diversity reports, partner with local employment commissions, and assist in developing tools that will foster a divers and inclusive work staff. Take the pledge below.</p>
+  </div>
+
+ 
+</article>
+
+
+<div class="side-image">
+  
+  <div class="images-wrapper"><img src="img/gina.jpg" class="gina"></div>
+    <div class="side-image-content">
+      <h4>Gina Helrich</h4>
+      <h1> PhD
+          Founder & Principal Consultant, Third Coast InnovateHER
+          Co-Founder, recruitHER
+          Founder, Feminist Hack</h1>
+   <blockquote>   
+        <p><span>"</span>At present, only 26% of programmers in the U.S. are women, and just 1 in 14 tech employees in Silicon Valley is black or Latino. Moving the needle on diversity is critical for the tech industry and promises to have an outsize impact on society at large. We need to work together to build a tech workforce that accurately reflects the diversity of the millions of individuals whose lives are shaped by its products.
+        <br>
+        <br>
+        For workers, the tech sector often offers higher salaries than other industries, boasts one of the smallest gender pay gaps compared to other professions, and offers a unique opportunity to play a role in shaping our collective future. For companies, a diverse workplace is proven to drive better results, increase innovation, and more accurately reflect a company’s user base, resulting in better decisions. Research has repeatedly shown that companies with more diverse and inclusive teams have lower turnover, higher customer satisfaction, higher productivity, and higher profitability. Diversity is a win-win for tech professionals and the companies who employ them.<span>"</span></p>
+    </blockquote>  
+  </div>
+</div>
+
+<form class="cd-form floating-labels">
+
+      <div class="Sign">
+           <input type="submit" value="Sign Up">
+      </div>
+    </fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="wrapper-for-content-outside-of-footer">
+   Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+</div>-->
+
+<footer class="footer-2" role="contentinfo">
+  <div class="footer-logo">
+    <img src="img/logo.png" alt="Logo image">
+  </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="starter-kit.html">Get Involved</a></li>
+    </ul>
+
+    <div class="footer-secondary-links">
+      <ul>
+        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+      </ul>
+
+      <ul class="footer-social">
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+          </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+      </ul>
+    </div>
+</footer>
+<script>
+$(document).ready(function() {
+  var menuToggle = $('#js-centered-navigation-mobile-menu').unbind();
+  $('#js-centered-navigation-menu').removeClass("show");
+  
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-centered-navigation-menu').slideToggle(function(){
+      if($('#js-centered-navigation-menu').is(':hidden')) {
+        $('#js-centered-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+</script>
+<script>
+$(document).ready(function() {
+  if ($("#js-parallax-window").length) {
+    parallax();
+  }
+});
+
+$(window).scroll(function(e) {
+  if ($("#js-parallax-window").length) {
+    parallax();
+  }
+});
+
+function parallax(){
+  if( $("#js-parallax-window").length > 0 ) {
+    var plxBackground = $("#js-parallax-background");
+    var plxWindow = $("#js-parallax-window");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+  }
+}
+</script>
+</body>
+</html>
