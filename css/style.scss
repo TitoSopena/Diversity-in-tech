@@ -896,12 +896,13 @@ h4 {
 }
 .scroll-on-page {
   @include padding(15vh 10em 5em 9.2em);
-  $base-line-height: 1.5em !default;
+  $base-line-height: 2 !default;
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $base-font-color: $dark-gray !default;
+  margin-left: 20%;
 
   display: inline-block;
 
@@ -913,11 +914,12 @@ h4 {
   aside {
     @include media($large-screen) {
       @include span-columns(4);
+
     }
   }
 
   .scroll-on-page-link {
-    border-bottom: 1px solid transparentize($action-color, 0.8);
+    // border-bottom: 1px solid transparentize($action-color, 0.8);
     display: block;
     margin-right: $base-spacing;
     outline: none;
