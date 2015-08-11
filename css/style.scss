@@ -623,7 +623,7 @@ article.type-system-sans-home {
   $action-color: #477DCA !default;
   $dark-gray: #333 !default;
   $light-gray: #DDD !default;
-  $medium-screen: em(640) !default;
+  $medium-screen: 2em(640) !default;
   $base-font-color: $dark-gray !default;
   $sans-serif: 'Open Sans', sans-serif;
   $sans-serif-2: 'Open Sans', sans-serif;
@@ -661,7 +661,7 @@ article.type-system-sans-home {
   &.intro {
     font-size: 1.2em;
     margin-right: 10%;
-    margin-top: 40px
+    margin-top: 100px
   }
   }
 
@@ -895,7 +895,7 @@ h4 {
   font-family: $opensans;
 }
 .scroll-on-page {
-  @include padding(15vh 5em 4em 4.5em);
+  @include padding(15vh 10em 5em 9.2em);
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
@@ -1009,16 +1009,18 @@ body {
   margin: 2em;
   overflow: auto;
   padding: 0;
+  margin: 0 auto;
 
   .bullet {
     @include flex-basis(20em);
     @include flex-grow(1);
     margin-top: 100px;
     margin-right: 15%;
+
   }
 
   .bullet-icon {
-    border-radius: 50%;
+    border-radius: 10%;
     float: left;
     height: $icon-bullet-size;
     padding: $icon-bullet-size / 4;
@@ -1498,6 +1500,8 @@ article.type-system-geometric {
   $sans-serif: 'Open Sans', sans-serif;
   $serif: 'Open Sans', serif;
   padding: 5%;
+  margin: 0 auto;
+  max-width: 1400px;
 
   @include clearfix;
   font-family: $sans-serif;
@@ -1634,11 +1638,10 @@ article.type-system-geometric {
 
 
 .side-image {  
-
+    max-width: 1400px;
   .gina {
-
-    max-height: 100%;
-    max-width: 100%;
+    max-width: 575px;
+  
   }
 
   $base-line-height: 1.5em !default;
@@ -1650,44 +1653,44 @@ article.type-system-geometric {
   $side-image-background-bottom: #5DAC5D;
   $side-image-content-background: #F9F9F9;
   $side-image-border: white;
-  margin-left: 10%;
   background: white;
 
   @include media($large-screen) {
-    @include row(table);
   }
 
   .images-wrapper {
-    @include background(url('..img/gina.jpg'),no-repeat scroll);
+    // @include background(url('..img/gina.jpg'),no-repeat scroll);
     background-color: white;
     background-size: cover;
     border-bottom: $side-image-border;
     display: block;
     min-height: 10em;
-    padding: 1em;
-    margin-top: 2em;
+    
 
     @include media($large-screen) {
-      @include span-columns(4);
-      background-position: bottom;
-      background-size: cover;
-      border-right: $side-image-border;
+     width: 31.76157%;
     }
   }
 
   .side-image-content {
-    margin-top: 10em;
-    @include span-columns(12);
+    width: 100%;
+    float: none;
+    display: block;
     padding: 1em 1em 4em 1em;
 
     @include media($large-screen) {
-      @include span-columns(8);
-      padding: 4em 4em 8em 4em;
+      width: 66.66666666676%;
+      float: none;
+      display: block;
+      padding: 4em 4em 8em 0;
     }
 
-    h1 {
+    h5 {
       margin-bottom: 0.9em;
       width: 60%;
+      font-family: $Playfair;
+      font-style: italic;
+      line-height: 1.5;
     }
 
     h4 {
@@ -1704,21 +1707,24 @@ article.type-system-geometric {
       color: $base-font-color;
       line-height: $base-line-height;
       margin-bottom: 3em;
+      width: 100%;
     }
-  }
+      blockquote {
+    width: 100%;
+    text-indent: -8px;
+    }
+    span {
+      font-weight: bold;
+      font-size: 1.2em;
+         }
+}
+}
+
 
   @include reset-display();
 
 
 
-  blockquote {
-    width: 60%;
-    text-indent: -7px;
-  }
-  span {
-    font-weight: bold;
-  }
-}
 
 
 
