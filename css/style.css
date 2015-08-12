@@ -62,7 +62,9 @@ html {
     display: inline;
     float: left;
     max-height: 60px;
-    padding-left: 1em; }
+    padding-left: 1em;
+    width: 50px;
+    margin-top: 13px; }
     .centered-navigation .mobile-logo img {
       max-height: 60px;
       opacity: .6;
@@ -913,8 +915,7 @@ Form
     .cd-form textarea:focus,
     .cd-form select:focus {
       outline: none;
-      border-color: #2c97de;
-      box-shadow: 0 0 5px rgba(44, 151, 222, 0.2); }
+      border-color: #2c97de; }
   .cd-form .cd-select {
     /* select element wapper */
     position: relative; }
@@ -1055,17 +1056,6 @@ Form
       transform: scale(0.9); }
   .cd-form [required] {
     background: url("../img/cd-required.svg") no-repeat top right; }
-  .cd-form .error-message p {
-    background: #e94b35;
-    color: #ffffff;
-    font-size: 1.4rem;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    border-radius: .25em;
-    padding: 16px; }
-  .cd-form .error {
-    border-color: #e94b35 !important; }
   @media only screen and (min-width: 600px) {
     .cd-form div {
       /* form element wrapper */

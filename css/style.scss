@@ -43,6 +43,8 @@ $Playfair: 'Playfair Display', sans-serif !default;
   float: left;
   max-height: $centered-navigation-height;
   padding-left: $centered-navigation-padding;
+  width: 50px;
+  margin-top: 13px;
 
   img {
     max-height: $centered-navigation-height;
@@ -1162,7 +1164,7 @@ Form
     &:focus {
       outline: none;
       border-color: $color-2;
-      box-shadow: 0 0 5px rgba($color-2, .2);
+      // box-shadow: 0 0 5px rgba($color-2, .2);
     }
   }
 
@@ -1335,19 +1337,17 @@ Form
     background: url('../img/cd-required.svg') no-repeat top right;
   }
 
-  .error-message p {
-    background: $color-5;
-    color: $color-4;
-    font-size: 1.4rem;
-    text-align: center;
-    @include font-smoothing;
-    border-radius: .25em;
-    padding: 16px;
-  }
+  // .error-message p {
+   
+  //   color: $color-4;
+  //   font-size: 1.4rem;
+  //   text-align: center;
+  //   @include font-smoothing;
+  //   border-radius: .25em;
+  //   padding: 16px;
+  // }
 
-  .error {
-    border-color: $color-5 !important;
-  }
+
 
   @include MQ(M) {
     div {
