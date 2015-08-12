@@ -106,7 +106,10 @@ $Playfair: 'Playfair Display', sans-serif !default;
   }
 
   // The nav items
-
+  .header-logo {
+    max-width: 2%;
+ 
+  }
   .nav-link:first-child {
     @include media($horizontal-bar-mode) {
       margin-left: $centered-navigation-item-nudge;
@@ -661,7 +664,7 @@ article.type-system-sans-home {
   &.intro {
     font-size: 1.2em;
     margin-right: 10%;
-    margin-top: 100px
+    margin-top: 50px
   }
   }
 
@@ -728,14 +731,12 @@ article.type-system-sans-home {
   h3 {
    font-family: $sans-serif-2;
    font-size: 1.2em;
-   font-weight: 700;
    line-height: 1.4em;
    margin-bottom: 30px; 
-   text-transform: uppercase;
-   
-   font-weight: bold;
-   display: inline-block;
-   margin-left: 20%;
+   text-align: center;
+ 
+ 
+  
 
   }
 
@@ -819,7 +820,6 @@ article.type-system-sans-home {
   background-color: $card-background;
   border-radius: $base-border-radius;
   border: $card-border;
-  box-shadow: 0 2px 4px darken($base-background-color, 10%);
   cursor: pointer;
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
@@ -902,8 +902,6 @@ h4 {
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $base-font-color: $dark-gray !default;
-  
-
   display: inline-block;
 
   a {
@@ -992,10 +990,9 @@ body {
 }
 
 // ********* CONTACT PAGE ********** //
-.bullets {
-  margin-left: 7.2%;
-  position: relative;
-  left: 5%;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 .bullets {
   $base-line-height: 1.5em !default;
@@ -1003,8 +1000,6 @@ body {
   $dark-gray: #333 !default;
   $base-font-color: $dark-gray !default;
   $icon-bullet-size: 4em;
-  
-
   @include display(flex);
   @include flex-wrap(wrap);
   margin-bottom: $base-line-height;
@@ -1014,10 +1009,9 @@ body {
   margin: 0 auto;
 
   .bullet {
-    @include flex-basis(20em);
+    @include flex-basis(15em);
     @include flex-grow(1);
     margin-top: 100px;
-    margin-right: 15%;
 
   }
 
@@ -1046,6 +1040,7 @@ body {
   .bullet-content {
     margin-left: $icon-bullet-size * 1.4;
     margin-bottom: 2em;
+
   }
 
   h2 {
