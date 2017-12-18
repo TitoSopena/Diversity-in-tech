@@ -1,3 +1,3 @@
-# Diversity-in-tech
+# Diversity in tech
 
 
